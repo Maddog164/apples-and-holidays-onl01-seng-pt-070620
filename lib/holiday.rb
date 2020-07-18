@@ -72,11 +72,12 @@ def all_winter_holiday_supplies(holiday_hash)
     #binding.pry
     if season == "winter"
       holiday.each do |holiday, supplies|
-        new_supplies << [supplies]
+        new_supplies << [supplies.flatten]
+        binding.pry
       end #do
     end #if
   end #do
-  return new_supplies.flatten
+  return new_supplies
 end #def
 
 def all_supplies_in_holidays(holiday_hash)

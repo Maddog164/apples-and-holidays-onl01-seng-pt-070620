@@ -71,7 +71,7 @@ def all_winter_holiday_supplies(holiday_hash)
   holiday_supplies.each do |season, holiday|
     binding.pry
     if season == "winter"
-      season.each do |holiday, supplies|
+      holiday.each do |holiday, supplies|
         new_supplies << [supplies]
       end #do
     end #if

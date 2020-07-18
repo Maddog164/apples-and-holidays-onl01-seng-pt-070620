@@ -96,6 +96,7 @@ def all_supplies_in_holidays(holiday_hash)
       holiday.each do |holiday, supplies|
         puts holiday.to_s.capitalize + ": "
         supplies_list << supplies
+        binding.pry
       end #do
       puts supplies_list.flatten
   end #do

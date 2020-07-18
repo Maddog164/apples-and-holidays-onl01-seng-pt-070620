@@ -70,7 +70,7 @@ def all_winter_holiday_supplies(holiday_hash)
   new_supplies = []
   holiday_supplies.each do |season, holiday|
     #binding.pry
-    if season == "winter"
+    if season == ":winter"
       holiday.each do |holiday, supplies|
         new_supplies << [supplies.flatten]
         binding.pry

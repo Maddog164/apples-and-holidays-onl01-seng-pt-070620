@@ -91,14 +91,14 @@ def all_supplies_in_holidays(holiday_hash)
   #hold_season = ""
   supplies_list = []
   holiday_supplies.each do |season, holiday|
-    #binding.pry
+    binding.pry
     puts season.to_s.capitalize + ":"
-      holiday.each do |holiday, supplies|
-        puts holiday.to_s.capitalize + ": "
-        supplies_list << supplies
-        binding.pry
-      end #do
-      puts supplies_list.flatten
+    holiday.each do |holiday, supplies|
+      puts holiday.to_s.capitalize + ": "
+      supplies_list << supplies
+      binding.pry
+    end #do
+    puts supplies_list.flatten
   end #do
   #binding.pry
   #puts hold_season
